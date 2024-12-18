@@ -42,6 +42,12 @@ Before getting started with YouTube-Music-Downloader, ensure your runtime enviro
 - **Programming Language:** Python
 - **Package Manager:** Pip
 
+## Export Cookies
+
+1. Install the [Get cookies.txt LOCALLY](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?hl=en) Chrome extension.
+2. Open [YouTube Music](https://music.youtube.com/) in Chrome and log in to your account.
+3. Click on the extension icon and export cookies for `music.youtube.com` as `cookies.txt`.
+
 
 ### ⚙️ Installation
 
