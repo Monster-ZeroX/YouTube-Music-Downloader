@@ -1,66 +1,94 @@
-# YouTube Music Downloader
+## 🔗 Table of Contents
 
-A Python-based tool to download music from YouTube Music in MP3 format. The script uses the `yt-dlp` library for downloading and `ffmpeg` for audio extraction.
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Usage](#🤖-usage)
+- [🎗 License](#-license)
 
-## Features
-- Download YouTube Music tracks as MP3 files.
-- High-quality audio extraction (up to 320 kbps).
-- Interactive file dialogs for selecting input files and download locations.
-- Retry mechanism for failed downloads.
-- Support for YouTube Music cookies.
+---
 
-## Prerequisites
-Before running the script, make sure you have the following installed:
-1. **Python 3.8+**
-2. **ffmpeg**
-   - Install via package manager:
-     - **Linux**: `sudo apt install ffmpeg`
-     - **macOS**: `brew install ffmpeg`
-     - **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/).
+📍 **Overview**  
+- A Python-based downloader that extracts music from YouTube Music and saves it as high-quality MP3 files. This tool supports interactive file selection, authenticated downloads using cookies, and retries for failed downloads.
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Monster-ZeroX/YouTube-Music-Downloader.git
-   cd YouTube-Music-Downloader
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Export Cookies (if required):
+👾 **Features**  
+- Download MP3 files from YouTube Music with up to 320 kbps quality.
+- Interactive file prompts for selecting links, cookies, and output folder.
+- Support for authenticated downloads via exported cookies.
+- Retry mechanism to reattempt failed downloads.
+- Compatible with both individual tracks and playlists.
+## 📁 Project Structure
 
-Install the Get cookies.txt LOCALLY Chrome extension.
-Open YouTube Music in Chrome and log in to your account.
-Click on the extension icon and export cookies for music.youtube.com as cookies.txt.
-Run the Script:
+```sh
+└── YouTube-Music-Downloader/
+    ├── LICENSE
+    ├── README.md
+    ├── requirements.txt
+    └── youtube_music_downloader.py
+```
 
-bash
-Copy code
-python youtube_music_downloader.py
-Follow the graphical prompts to:
 
-Select a text file containing YouTube Music links.
-Optionally select the exported cookies.txt file for authenticated downloads.
-Choose a download location.
-The downloaded MP3 files will be saved in the selected folder.
 
-Input File Format
-The input file should be a .txt file with one YouTube Music link per line:
+---
+## 🚀 Getting Started
 
-arduino
-Copy code
-https://music.youtube.com/watch?v=s0WIUpETeok&si=5CVSX_rXD1680iAR
-https://music.youtube.com/watch?v=srrGnB2yPbg&si=hBa4mdLPHVvaolNb
-Example
-Input file: httpsmusicy.txt
-Output: MP3 files saved in the selected folder.
+### ☑️ Prerequisites
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Before getting started with YouTube-Music-Downloader, ensure your runtime environment meets the following requirements:
 
-Contributions
-Contributions are welcome! Feel free to open issues or submit pull requests.
+- **Programming Language:** Python
+- **Package Manager:** Pip
 
-Disclaimer
-This script is intended for personal use only. Ensure you comply with YouTube's terms of service.
+
+### ⚙️ Installation
+
+Install YouTube-Music-Downloader using one of the following methods:
+
+**Build from source:**
+
+1. Clone the YouTube-Music-Downloader repository:
+```sh
+git clone https://github.com/Monster-ZeroX/YouTube-Music-Downloader/
+```
+
+2. Navigate to the project directory:
+```sh
+cd YouTube-Music-Downloader
+```
+
+3. Install the project dependencies:
+
+
+**Using `pip`** &nbsp;
+
+```sh
+pip3 install -r requirements.txt
+```
+
+
+
+
+### 🤖 Usage
+Run YouTube-Music-Downloader using the following command:
+**Using `pip`**
+
+```sh
+python3 youtube_music_downloader.py
+```
+
+
+## 🔰 Contributing
+
+- **💬 [Join the Discussions](https://github.com/Monster-ZeroX/YouTube-Music-Downloader/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/Monster-ZeroX/YouTube-Music-Downloader/issues)**: Submit bugs found or log feature requests for the `YouTube-Music-Downloader` project.
+- **💡 [Submit Pull Requests](https://github.com/Monster-ZeroX/YouTube-Music-Downloader/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+
+---
+
+## 🎗 License
+
+This project is protected under the [GPL-3.0 license](https://github.com/Monster-ZeroX/YouTube-Music-Downloader/tree/main?tab=GPL-3.0-1-ov-file#) License. For more details, refer to the [LICENSE](https://github.com/Monster-ZeroX/YouTube-Music-Downloader/tree/main?tab=GPL-3.0-1-ov-file#) file.
+---
